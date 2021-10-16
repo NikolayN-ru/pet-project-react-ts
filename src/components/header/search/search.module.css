@@ -1,0 +1,23 @@
+header .input {
+  position: relative;
+  border: 1px solid #e5e5ea;
+  border-radius: 60px;
+}
+header .input input {
+  max-width: 471px;
+  height: 56px;
+  box-shadow: 0px 12px 24px rgba(5, 16, 55, 0.04);
+  border-radius: 60px;
+  padding: 15px 24px;
+  display: flex;
+  align-items: center;
+  border: none;
+  line-height: 18px;
+  font-size: 16px;
+  color: #8e8e93;
+}
+header .input .searchIco {
+  position: absolute;
+  bottom: 32px;
+  right: 20px;
+}

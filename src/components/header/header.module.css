@@ -1,0 +1,17 @@
+header {
+  background-color: rgba(255, 255, 255, 0.918);
+  z-index: 100;
+  position: sticky;
+  top: 0;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1 {
+  font-family: "Festive", cursive;
+}
+header h1:hover {
+  color: rgba(5, 16, 55, 0.1);
+  cursor: pointer;
+}
