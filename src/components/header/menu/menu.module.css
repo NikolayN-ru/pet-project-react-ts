@@ -1,0 +1,7 @@
+header ul {
+  cursor: pointer;
+  display: flex;
+  gap: 32px;
+  font-size: 16px;
+  line-height: 18px;
+}

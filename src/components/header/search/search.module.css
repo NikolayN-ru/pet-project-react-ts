@@ -1,10 +1,10 @@
-header .input {
+.input {
   position: relative;
   border: 1px solid #e5e5ea;
   border-radius: 60px;
 }
-header .input input {
-  max-width: 471px;
+.input input {
+  width: 371px;
   height: 56px;
   box-shadow: 0px 12px 24px rgba(5, 16, 55, 0.04);
   border-radius: 60px;
@@ -16,7 +16,7 @@ header .input input {
   font-size: 16px;
   color: #8e8e93;
 }
-header .input .searchIco {
+.input .searchIco {
   position: absolute;
   bottom: 32px;
   right: 20px;

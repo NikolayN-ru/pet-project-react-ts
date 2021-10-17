@@ -1,0 +1,72 @@
+.cardDescription:hover {
+  box-shadow: 0px 18px 34px rgba(5, 14, 43, 0.363);
+}
+.cardDescription {
+  padding: 36px;
+  padding-top: 0px;
+  box-shadow: 0px 18px 34px rgba(5, 16, 55, 0.15);
+  border-radius: 12px;
+}
+.cardDescription h2 {
+  font-size: 38px;
+  line-height: 36px;
+}
+.cardDescriptionAvatar {
+  margin-bottom: 16px;
+}
+ .cardDescriptionAvatar span {
+  font-size: 16px;
+  line-height: 16px;
+  margin-left: 8px;
+}
+ .cardDescriptionOffer {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 12px;
+}
+ .cardDescriptionOffer .price .price1,
+ .cardDescriptionOffer .time .price1 {
+  font-size: 16px;
+  line-height: 24px;
+}
+.cardDescription .cardDescriptionOffer .price .price2,
+.cardDescription .cardDescriptionOffer .time .price2 {
+  font-size: 24px;
+  line-height: 24px;
+}
+.cardDescription .cardDescriptionOffer .price .price3,
+.cardDescription .cardDescriptionOffer .time .price3 {
+  font-size: 16px;
+  line-height: 18px;
+  color: #8e8e93;
+}
+ .cardDescriptionBtn {
+  cursor: pointer;
+  font-family: "IM Fell English SC", serif;
+  background: #007aff;
+  border-radius: 45px;
+  font-size: 16px;
+  line-height: 18px;
+  border: none;
+  width: 360px;
+  height: 56px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.cardDescription .cardDescriptionBtn:hover {
+  background: #324de6ec;
+  color: #f5f5f5;
+}
+.cardDescription p {
+  text-align: center;
+}
+.cardDescription p a {
+  font-family: "IM Fell English SC", serif;
+  color: #007aff;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 18px;
+}
+.cardDescription p a:hover {
+  color: #324de6ec;
+}

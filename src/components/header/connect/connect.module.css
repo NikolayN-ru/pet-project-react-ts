@@ -1,0 +1,15 @@
+.connect {
+  font-family: "IM Fell English SC", serif;
+  cursor: pointer;
+  width: 151px;
+  height: 47px;
+  padding: 16px;
+  background-color: rgba(0, 122, 255, 0.12);
+  color: #007aff;
+  border: 0.5px solid rgba(0, 122, 255, 0.12);
+  border-radius: 33px;
+}
+.connect:hover {
+  background-color: rgba(0, 123, 255, 0.829);
+  color: #e5ebf1;
+}

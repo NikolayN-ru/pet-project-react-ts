@@ -1,0 +1,13 @@
+.todoItem {
+  cursor: pointer;
+  font-size: 18px;
+  list-style-type: none;
+  padding: 5px;
+}
+.span {
+  color: #fff;
+}
+.todoItem:hover .span,
+.todoItem:hover {
+  color: #3e3eda;
+}

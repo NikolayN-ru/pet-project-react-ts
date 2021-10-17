@@ -1,0 +1,31 @@
+.footerSubscribe p {
+  color: #fff;
+  font-size: 20px;
+  line-height: 24px;
+}
+.footerSubscribeInput {
+  position: relative;
+}
+.footerSubscribeInput input {
+  background: #2c2c2e;
+  border-radius: 72px;
+  width: 427px;
+  height: 56px;
+  border: none;
+  padding-left: 20px;
+  color: #fff;
+}
+.footerSubscribeInput button {
+  cursor: pointer;
+  position: absolute;
+  width: 98px;
+  height: 56px;
+  color: #fff;
+  right: 0;
+  border-radius: 72px;
+  background-color: #0a84ff;
+  border: none;
+}
+Î.footerSubscribeInput button:hover {
+  background-color: #324de6ec;
+}
