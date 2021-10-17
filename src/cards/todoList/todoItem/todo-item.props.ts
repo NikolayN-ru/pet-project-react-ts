@@ -2,7 +2,8 @@ export default interface TodoItemProps {
   item: {
     id: number;
     title: string;
-    done: boolean;
-    important: boolean;
+    done: boolean | null;
+    important: boolean | null;
   };
+  setTodo(id: number): void;
 }
