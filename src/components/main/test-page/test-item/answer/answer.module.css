@@ -1,0 +1,10 @@
+.answer {
+    background-color: rgb(173, 33, 33);
+    border-radius: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.answer:hover {
+    background-color: rgb(150, 92, 92);
+}

@@ -7,6 +7,7 @@ import Footer from "./components/footer";
 import Main from "./components/main";
 import Card from "./cards/card";
 import Test from "./components/main/test-page";
+import Server from './components/main/server';
 
 export const App: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ export const App: React.FC = () => {
         <Route exact path="/" component={Card} />
         <Route path="/test" component={Test} />
         <Route path="/main" component={Main} />
+        <Route path="/server" component={Server} />
         <Footer />
       </Router>
     </div>
