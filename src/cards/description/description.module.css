@@ -14,18 +14,18 @@
 .cardDescriptionAvatar {
   margin-bottom: 16px;
 }
- .cardDescriptionAvatar span {
+.cardDescriptionAvatar span {
   font-size: 16px;
   line-height: 16px;
   margin-left: 8px;
 }
- .cardDescriptionOffer {
+.cardDescriptionOffer {
   display: flex;
   gap: 24px;
   margin-bottom: 12px;
 }
- .cardDescriptionOffer .price .price1,
- .cardDescriptionOffer .time .price1 {
+.cardDescriptionOffer .price .price1,
+.cardDescriptionOffer .time .price1 {
   font-size: 16px;
   line-height: 24px;
 }
@@ -40,7 +40,11 @@
   line-height: 18px;
   color: #8e8e93;
 }
- .cardDescriptionBtn {
+.cardDescriptionOffer .time .price3:hover {
+  color: rgb(167, 0, 78);
+}
+
+.cardDescriptionBtn {
   cursor: pointer;
   font-family: "IM Fell English SC", serif;
   background: #007aff;
@@ -60,13 +64,14 @@
 .cardDescription p {
   text-align: center;
 }
-.cardDescription p a {
+.cardDescription p {
+  cursor: pointer;
   font-family: "IM Fell English SC", serif;
-  color: #007aff;
+  color: #df64b6ec;
   text-decoration: none;
   font-size: 16px;
   line-height: 18px;
 }
-.cardDescription p a:hover {
-  color: #324de6ec;
+.cardDescription p:hover {
+  color: #ca003dec;
 }

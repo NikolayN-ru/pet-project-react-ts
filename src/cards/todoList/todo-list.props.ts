@@ -6,6 +6,6 @@ export default interface TodoListProps {
     important: boolean | null;
   }[];
   setTodo(id: number): void;
-  addTodo(id: number): void;
+  addTodo(id: string): void;
   //   toggleDone: (id: number) => void;
 }

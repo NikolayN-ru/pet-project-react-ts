@@ -6,5 +6,7 @@ export default interface DescriptionProps {
     important: boolean | null;
   };
   toggleDone(id: number): void;
-  onRemove?: (id: number) => void;
+  removeTodo: (id: number) => void;
+  toggleImp: (id: number) => void;
+  upTop: (id: number) => void;
 }

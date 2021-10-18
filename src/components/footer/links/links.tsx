@@ -12,12 +12,12 @@ export const Links: React.FC = (): JSX.Element => {
     <div className={styles.footerMenu}>
       <ul>
         {data[0].map((item) => {
-          return <Link item={item} />;
+          return <Link key={item} item={item} />;
         })}
       </ul>
       <ul>
         {data[1].map((item) => {
-          return <Link item={item} />;
+          return <Link key={item} item={item} />;
         })}
       </ul>
     </div>

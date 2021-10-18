@@ -1,7 +1,19 @@
 .headerUlLi {
-    list-style-type: none;
-    font-family: "IM Fell English SC", serif;
-  }
-  .headerUlLi:hover {
-    color: #3e3eda;
-  }
+  list-style-type: none;
+  font-family: "IM Fell English SC", serif;
+}
+.headerUlLi:hover {
+  color: #3e3eda;
+}
+
+.link {
+  text-decoration: none;
+
+}
+.link:visited{
+  color: #282733;
+}
+
+.link:hover {
+  color: #3e3eda;
+}

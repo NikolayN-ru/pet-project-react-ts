@@ -12,7 +12,7 @@ export const TodoList: React.FC<TodoListProps> = ({
   return (
     <div className={styles.todoList}>
       <span>Todo-list</span>
-      {/* <SearchPanel addTodo={addTodo}/> */}
+      <SearchPanel addTodo={addTodo}/>
       <ul>
         {data.map((item) => {
           return <TodoItem key={item.id} item={item} setTodo={setTodo} />;
