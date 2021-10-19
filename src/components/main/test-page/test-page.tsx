@@ -1,11 +1,27 @@
 import React, { useState } from "react";
 import styles from "./test-page.module.css";
 import TestItem from "./test-item";
+import Connect from "../../header/connect";
 
 const data = [
-  { id: 1, question: "qwe", answers: ["1", "2", "3", "4"], rightAnswer: "2" },
-  { id: 2, question: "asd", answers: ["1", "2", "3", "4"], rightAnswer: "1" },
-  { id: 3, question: "zxc", answers: ["1", "2", "3", "4"], rightAnswer: "4" },
+  {
+    id: 1,
+    question: "Что такое React ?",
+    answers: ["фреймворк", "ui-библиотека", "js-пакет", "идеология"],
+    rightAnswer: "ui-библиотека",
+  },
+  {
+    id: 2,
+    question: "Что такое JSX ?",
+    answers: ["расширение языка js", "отдельный язык", "три буквы", "незнаю"],
+    rightAnswer: "расширение языка js",
+  },
+  {
+    id: 3,
+    question: "Что такое babel ?",
+    answers: ["компилятор", "no", "no", "транспайлер"],
+    rightAnswer: "транспайлер",
+  },
 ];
 
 export const TestPage: React.FC = (): JSX.Element => {
@@ -21,7 +37,24 @@ export const TestPage: React.FC = (): JSX.Element => {
   };
 
   if (count > data.length) {
-    return <p>правильных ответов - {right} - пройти тест еще раз |КНОПКА|</p>;
+    return (
+      <div className={styles.container}>
+        <p>
+          правильных ответов - {right} -{" "}
+          <div
+            onClick={() => {
+              setCount(1);
+              setRight(0);
+            }}
+          >
+            <br />
+            <br />
+            <Connect value={"пройти тест еще раз"} />
+            <br />
+          </div>
+        </p>
+      </div>
+    );
   }
 
   return (
@@ -30,7 +63,9 @@ export const TestPage: React.FC = (): JSX.Element => {
       {count ? (
         <TestItem itemTest={data[count - 1]} onAnswer={onAnswer} />
       ) : (
-        <button onClick={() => setCount(1)}>начать тест</button>
+        <div onClick={() => setCount(1)}>
+          <Connect value={"начать тест"} />
+        </div>
       )}
     </div>
   );

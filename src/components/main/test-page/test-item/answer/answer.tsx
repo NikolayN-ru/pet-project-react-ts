@@ -6,10 +6,15 @@ interface Answer {
   onAnswer: (answer: string) => void;
 }
 
-export const Answer: React.FC<Answer> = ({ answer, onAnswer }): JSX.Element => {
+export const Answer: React.FC<Answer> = ({
+  answer,
+  onAnswer,
+  children,
+}): JSX.Element => {
   return (
     <div className={styles.answer} onClick={() => onAnswer(answer)}>
-      {answer}
+      {children}
+      {/* {answer} */}
     </div>
   );
 };

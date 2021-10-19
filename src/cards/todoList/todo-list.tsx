@@ -11,7 +11,7 @@ export const TodoList: React.FC<TodoListProps> = ({
 }): JSX.Element => {
   return (
     <div className={styles.todoList}>
-      <span>Todo-list</span>
+      <span className={styles.hendler}>Todo-lisT</span>
       <SearchPanel addTodo={addTodo}/>
       <ul>
         {data.map((item) => {

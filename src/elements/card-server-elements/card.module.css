@@ -1,0 +1,14 @@
+.card {
+    margin: 0 auto;
+    width: 400px;
+    /* background-color: #191D2E; */
+    background: linear-gradient(180deg, #0E1A19 0%, #133B2A 100%);
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.h2 {
+    color: #C2E978;
+}
+

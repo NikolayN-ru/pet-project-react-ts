@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import styles from "./server.module.css";
 import { APIServer } from "../../../api/api-swapi";
 import { Placeholder } from "../../../api/api-json-palseholder";
+import Spinner from "../../../elements/spinner";
+import CardServerElements from "../../../elements/card-server-elements";
+import Connect from "../../header/connect";
 
 interface TodoProps {
   userId: number;
@@ -30,6 +33,7 @@ export const Server: React.FC = (): JSX.Element => {
   const [plase, setPlase] = useState<TodoProps>(plaseholder);
 
   const getRandomPeople = (id: number): void => {
+    setState(data);
     let server = new APIServer();
     server.getPerson(id).then((person) => {
       setState({
@@ -56,10 +60,15 @@ export const Server: React.FC = (): JSX.Element => {
 
   return (
     <div>
-      server-{state.name ? `${state.name}---${state.id}` : "SPINNER"}
-      <button onClick={() => getRandomPeople(Math.round(Math.random() * 100))}>
-        random-person
-      </button>
+      server-
+      {state.name ? (
+        <CardServerElements name={state.name} id={state.id} />
+      ) : (
+        <Spinner />
+      )}
+      <div onClick={() => getRandomPeople(Math.round(Math.random() * 100))}>
+        <Connect value="random-person" />
+      </div>
       <p>
         {plase.userId}={plase.id}={plase.title}={plase.completed}
       </p>
@@ -67,8 +76,7 @@ export const Server: React.FC = (): JSX.Element => {
         swapi-get
       </button>
       <p>получить случайный пост : --</p>
-          <p>получить список коментариев к посту : --</p>
-
+      <p>получить список коментариев к посту : --</p>
     </div>
   );
 };

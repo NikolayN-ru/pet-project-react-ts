@@ -12,7 +12,7 @@ export const Header: React.FC = () => {
       <Search />
       <Menu />
       <Cart />
-      <Connect />
+      <Connect value={'что-то'}/>
     </header>
   );
 };
